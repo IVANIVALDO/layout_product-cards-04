@@ -1,0 +1,11 @@
+/src
+  /figures
+    Circle.ts
+    Rectangle.ts
+    Triangle.ts
+    Figure.ts
+    getInfo.ts
+  /tests
+    Circle.test.ts
+    Rectangle.test.ts
+    Triangle.test.ts
