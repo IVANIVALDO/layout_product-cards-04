@@ -1,0 +1,18 @@
+@use 'variables' as *;
+
+@import 'variables';
+@import 'stars';
+@import 'card';
+
+body {
+  font-family: $font-family;
+  background-color: #f9f9f9;
+  margin: 40px 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+}
