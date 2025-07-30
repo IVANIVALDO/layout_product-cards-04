@@ -1,0 +1,42 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container das estrelas */
+.stars {
+  display: flex;
+  /* Tamanho das estrelas + distância */
+  /* 5 estrelas x 20px largura + 4 espaçamentos x 4px */
+  width: calc(5 * 20px + 4 * 4px);
+  /* Sem margem vertical entre blocos */
+  margin-bottom: 0;
+}
+
+/* Cada estrela */
+.stars__star {
+  width: 20px;
+  height: 20px;
+  background-image: url('./images/star-inactive.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* Espaçamento entre estrelas (à direita, exceto na última) */
+  margin-right: 4px;
+}
+
+/* Remover margin direita da última estrela */
+.stars__star:last-child {
+  margin-right: 0;
+}
+
+/* Modificadores para ativar as N primeiras estrelas */
+
+.stars--1 .stars__star:nth-child(-n + 1),
+.stars--2 .stars__star:nth-child(-n + 2),
+.stars--3 .stars__star:nth-child(-n + 3),
+.stars--4 .stars__star:nth-child(-n + 4),
+.stars--5 .stars__star:nth-child(-n + 5) {
+  background-image: url('./images/star-active.png');
+}
