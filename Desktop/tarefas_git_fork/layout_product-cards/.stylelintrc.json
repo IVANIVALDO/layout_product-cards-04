@@ -1,0 +1,9 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "scss/double-slash-comment-empty-line-before": "always",
+    "font-family-name-quotes": "always-where-recommended",
+    "no-duplicate-selectors": true,
+    "no-descending-specificity": true
+  }
+}
