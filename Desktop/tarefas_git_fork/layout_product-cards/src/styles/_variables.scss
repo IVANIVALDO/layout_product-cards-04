@@ -1,0 +1,18 @@
+// src/styles/_variables.scss
+
+// Variáveis globais
+
+$star-size: 20px;
+$card-width: 200px;
+$card-padding: 16px;
+
+$color-primary: #ff6f61;
+
+// Novas variáveis adicionadas para fundo e texto
+$color-background: #ffffff; // branco para fundo
+$color-text: #333333;       // cor escura para texto
+
+$color-star-filled: $color-primary;
+$color-star-empty: rgba(10, 132, 255, 0.3);
+
+$font-family-base: 'Roboto', sans-serif;
