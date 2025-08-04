@@ -1,0 +1,29 @@
+@use 'variables' as vars;
+@use 'sass:color';
+
+.card {
+  background-color: color.adjust(vars.$color-primary, $lightness: -10%);
+  // resto do código...
+}
+
+.stars {
+  &__star {
+    width: vars.$star-size;
+    height: vars.$star-size;
+    background-image: url('../images/star.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.3; // Inativa por padrão
+  }
+
+  // Ativa estrelas dependendo do modificador
+  &--1 &__star:nth-child(-n + 1),
+  &--2 &__star:nth-child(-n + 2),
+  &--3 &__star:nth-child(-n + 3),
+  &--4 &__star:nth-child(-n + 4),
+  &--5 &__star:nth-child(-n + 5) {
+    opacity: 1;
+  }
+}
+
+
